@@ -1,0 +1,102 @@
+@charset "UTF-8"; // 分类图标区域
+.nav-icon {
+    background: #f6f6f6;
+    margin: 0 auto;
+    padding: 15px 0;
+    font-size:1.2rem;
+    color: #666;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    display: -ms-box;
+    display: -webkit-box;
+    display: box;
+    display: -webkit-flex;
+    display: flex;
+    & .icon-item {
+        // display: inline-block;
+        display: block;
+        flex: 1;
+        -webkit-flex: 1;
+        box-flex: 1;
+        -ms-box-flex: 1;
+        -webkit-box-flex: 1;
+        height: 62px;
+        margin: 0;
+        & img {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 6px;
+        }
+        & h3 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+
+// 新品尝鲜
+.floor{
+  font-size:1.8rem;
+  font-weight: normal;
+  color:#666;
+  text-align: center;
+  padding:0px 10px;
+  & h2{
+    font-size:1.8rem;
+    font-weight: normal;
+    position:relative;
+  }
+  & h2::before,& h2::after{
+    content: "";
+    display: inline-block;
+    width:40px;
+    height:2px;
+    background:#666;
+    position:relative;
+    top: -5px;
+  }
+  & h2::before{
+    right: 10px;
+  }
+  & h2::after{
+    left:10px;
+  }
+  // 产品区域
+  .productsList{
+    display: -webkit-flex;
+    display: flex;
+  }
+  .productsItem{
+    -webkit-flex: 1;
+    flex: 1;
+    padding:0px 5px;
+    & img{
+      display: block;
+      width:100%;
+      border:none;
+    }
+    & h3{
+      line-height: 1.5;
+      text-align: left;
+      font-size:1.6rem;
+      font-weight:normal;
+      color:#3b3b3b;
+    }
+    & .price{
+      color:#f87628;
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+    & .oldPrice{
+      color:#999;
+      font-size: 1.4rem;
+      line-height: 1;
+      text-decoration:line-through;
+    }
+  }
+
+}

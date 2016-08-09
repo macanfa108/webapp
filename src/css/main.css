@@ -1,0 +1,181 @@
+@charset "UTF-8";
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  *zoom: 1; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Microsoft yahei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  min-width: 320px;
+  max-width: 540px;
+  margin: 0 auto; }
+
+a, img {
+  -webkit-touch-callout: none;
+  /*禁止长按链接与图片弹出菜单*/
+  border: none; }
+
+html, body {
+  -webkit-user-select: none;
+  /*禁止选中文本*/
+  user-select: none; }
+
+button, input, optgroup, select, textarea {
+  -webkit-appearance: none;
+  /*去掉webkit默认的表单样式*/ }
+
+a, button, input, optgroup, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+  /*去掉a、input和button点击时的蓝色外边框和灰色半透明背景*/ }
+
+input::-webkit-input-placeholder {
+  color: #ccc;
+  /*修改webkit中input的planceholder样式*/ }
+
+input:focus::-webkit-input-placeholder {
+  color: #f00;
+  /*修改webkit中focus状态下input的planceholder样式*/ }
+
+body {
+  -webkit-text-size-adjust: 100% !important;
+  /*禁止IOS调整字体大小*/ }
+
+input::-webkit-input-speech-button {
+  display: none;
+  /*隐藏Android的语音输入按钮*/ }
+
+body，h1, h2, h3, h4, a, span, div, p, img, input, select, button, textarea, ul, li, ol, dl, dt, dd {
+  box-sizing: border-box; }
+
+#header {
+  background-color: #76be0e;
+  font-size: 1.4rem;
+  color: #fff;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  margin: 0 auto; }
+  #header .container {
+    margin: 0 10px;
+    display: flex;
+    flex-flow: row wrap; }
+    #header .container .location {
+      flex: 1; }
+      #header .container .location .location-icon {
+        position: relative;
+        top: 6px; }
+    #header .container .logo-title {
+      flex: 3; }
+      #header .container .logo-title h1 {
+        margin: 0;
+        padding: 0;
+        background: url("../images/icon/title.png") no-repeat;
+        text-indent: -9999px;
+        background-position: center center; }
+    #header .container .searchBox {
+      flex: 1;
+      background: url("../images/icon/search.png") no-repeat;
+      background-position: right center; }
+
+.swiper-container {
+  width: 100%; }
+
+.swiper-pagination-bullet-active {
+  background: #75BD0D; }
+
+.nav-icon {
+  background: #f6f6f6;
+  margin: 0 auto;
+  padding: 15px 0;
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  display: -ms-box;
+  display: -webkit-box;
+  display: box;
+  display: -webkit-flex;
+  display: flex; }
+  .nav-icon .icon-item {
+    display: block;
+    flex: 1;
+    -webkit-flex: 1;
+    box-flex: 1;
+    -ms-box-flex: 1;
+    -webkit-box-flex: 1;
+    height: 62px;
+    margin: 0; }
+    .nav-icon .icon-item img {
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin: 0 auto 6px; }
+    .nav-icon .icon-item h3 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      margin: 0;
+      padding: 0; }
+
+.floor {
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #666;
+  text-align: center;
+  padding: 0px 10px; }
+  .floor h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    position: relative; }
+  .floor h2::before, .floor h2::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    background: #666;
+    position: relative;
+    top: -5px; }
+  .floor h2::before {
+    right: 10px; }
+  .floor h2::after {
+    left: 10px; }
+  .floor .productsList {
+    display: -webkit-flex;
+    display: flex; }
+  .floor .productsItem {
+    -webkit-flex: 1;
+    flex: 1;
+    padding: 0px 5px; }
+    .floor .productsItem img {
+      display: block;
+      width: 100%;
+      border: none; }
+    .floor .productsItem h3 {
+      line-height: 1.5;
+      text-align: left;
+      font-size: 1.6rem;
+      font-weight: normal;
+      color: #3b3b3b; }
+    .floor .productsItem .price {
+      color: #f87628;
+      font-size: 1.8rem;
+      line-height: 1; }
+    .floor .productsItem .oldPrice {
+      color: #999;
+      font-size: 1.4rem;
+      line-height: 1;
+      text-decoration: line-through; }
